@@ -1,8 +1,6 @@
 # Project: Recur Prototype
 
-Designed and developed by
-* Morgan Mitchell
-* Andrew Goodman
+Designed and developed by _Morgan Mitchell_ and _Andrew Goodman_
 
 ## Team Members
 1. Morgan Mitchell
