@@ -16,21 +16,21 @@ description to be added...
 
 * Python 3.x
 
- ...[Python Downloads Page](https://www.python.org/downloads/)
+   [Python Downloads Page](https://www.python.org/downloads/)
 
 * Python package manager
 
- ...[Python Package Index "pip"](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py)
+   [Python Package Index "pip"](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py)
 
 * MySQL Server
 
- ...[MySQL Server](http://dev.mysql.com/downloads/mysql/)
+   [MySQL Server](http://dev.mysql.com/downloads/mysql/)
 
- ...[MySQL Utilities](http://dev.mysql.com/downloads/utilities/)
+   [MySQL Utilities](http://dev.mysql.com/downloads/utilities/)
 
- ...[MySQL Shell](http://dev.mysql.com/downloads/shell/)
+   [MySQL Shell](http://dev.mysql.com/downloads/shell/)
 
- ...[MySQL Workbench](http://dev.mysql.com/downloads/workbench/)
+   [MySQL Workbench](http://dev.mysql.com/downloads/workbench/)
 
 ## Pip Usage
 
