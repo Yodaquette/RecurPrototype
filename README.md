@@ -34,13 +34,13 @@ python3 -m pip list
 
 ### Install / Update
 
-python3 -m pip install [package-name]
+python3 -m pip install [_package-name_]
 
-python3 -m pip install --upgrade [package-name]
+python3 -m pip install --upgrade [_package-name_]
 
 or
 
-python3 -m pip install update [package-name]
+python3 -m pip install update [_package-name_]
 
 ## Required Python Packages
 
