@@ -14,23 +14,15 @@ description to be added...
 
 ## Required Software
 
-* Python 3.x
-
-   [Python Downloads Page](https://www.python.org/downloads/)
-
-* Python package manager
-
-   [Python Package Index "pip"](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py)
-
-* MySQL Server
-
-   [MySQL Server](http://dev.mysql.com/downloads/mysql/)
-
-   [MySQL Utilities](http://dev.mysql.com/downloads/utilities/)
-
-   [MySQL Shell](http://dev.mysql.com/downloads/shell/)
-
-   [MySQL Workbench](http://dev.mysql.com/downloads/workbench/)
+1. Python 3.x
+    * [Python Downloads Page](https://www.python.org/downloads/)
+2. Python package manager
+    * [Python Package Index "pip"](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py)
+3. MySQL Server
+    * [MySQL Server](http://dev.mysql.com/downloads/mysql/)
+    * [MySQL Utilities](http://dev.mysql.com/downloads/utilities/)
+    * [MySQL Shell](http://dev.mysql.com/downloads/shell/)
+    * [MySQL Workbench](http://dev.mysql.com/downloads/workbench/)
 
 ## Pip Usage
 
