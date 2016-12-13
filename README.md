@@ -11,3 +11,39 @@ Designed and developed by _Morgan Mitchell_ and _Andrew Goodman_
 ## Description
 
 description to be added...
+
+## Required Software
+
+* Python 3.x
+ ...[Python Downloads Page](https://www.python.org/downloads/)
+* Python package manager
+ ...[Python Package Index "pip"](https://pip.pypa.io/en/stable/installing/#installing-with-get-pip-py)
+* MySQL Server
+ ...[MySQL Server](http://dev.mysql.com/downloads/mysql/)
+ ...[MySQL Utilities](http://dev.mysql.com/downloads/utilities/)
+ ...[MySQL Shell](http://dev.mysql.com/downloads/shell/)
+ ...[MySQL Workbench](http://dev.mysql.com/downloads/workbench/)
+
+## Pip Usage
+
+Issue commands into a CLI window
+
+### List Packages Installed
+
+python3 -m pip list
+
+### Install / Update
+
+python3 -m pip install [package-name]
+
+python3 -m pip install --upgrade [package-name]
+
+or
+
+python3 -m pip install update [package-name]
+
+## Required Python Packages
+
+* pymysql
+* pycrypto
+* setuptools
