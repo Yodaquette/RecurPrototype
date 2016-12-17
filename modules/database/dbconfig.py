@@ -12,5 +12,6 @@ def dbconnect():
                                 ,password = 'root'
                                 ,db = 'recurDB'
                                 ,charset = 'utf8'
-                                ,cursorclass = pymysql.cursors.DictCursor)
+                                #,cursorclass = pymysql.cursors.DictCursor
+                                )
     return connection

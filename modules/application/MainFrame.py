@@ -4,49 +4,45 @@
 
     The main UI window
 """
-from tkinter import *
+import tkinter as tk
 from modules.database.DbInteract import *
 
+versionNumber = "v0.01"
 
-class MainFrame():
+
+class MainFrame(tk.Frame):
     """The main frame of the application"""
 
-    def __init__(self,master,ver):
+    def __init__(self,parent,controller):
         """Initializes the MainFrame class"""
 
-        master.title("Recur App Prototype")
+        tk.Frame.__init__(self,parent)
 
-        frame = Frame(master)
-        frame.grid(column = 0,row = 0,sticky = (N,E,S,W))
-
-        # Reads the current version number of the application
-        versionNumber = ver
-
-        welcomeLabel = Label(frame,text = "Welcome to the Recur App Prototype\n \
+        welcomeLabel = Label(self,text = "Welcome to the Recur App Prototype\n \
             Current Version {0}".format(versionNumber))
-        welcomeLabel.grid(column = 0,row = 0,sticky = (N,E,S,W))
+        welcomeLabel.grid(column = 0,row = 0,sticky = "nsew")
 
         # Memeber variables
         self.query = StringVar()
 
         # Text area
-        self.scroll = Scrollbar(frame)
+        self.scroll = Scrollbar(self)
 
-        self.txt = Text(frame,width = 50,height = 10)
-        self.txt.grid(column = 0,row = 1,rowspan = 2,sticky = (N,E,S,W))
+        self.txt = Text(self,width = 50,height = 10)
+        self.txt.grid(column = 0,row = 1,rowspan = 2,sticky = "nsew")
 
         self.scroll.config(command = self.txt.yview)
         self.txt.config(yscrollcommand = self.scroll.set)
 
         # Query entry field
-        self.queryEntry = Entry(frame,width=50,textvariable=self.query)
-        self.queryEntry.grid(column = 0,row = 2,rowspan = 2,sticky = (N,E,S,W))
+        self.queryEntry = Entry(self,width=50,textvariable=self.query)
+        self.queryEntry.grid(column = 0,row = 2,rowspan = 2,sticky = "nsew")
 
         # Query execute Button
-        self.queryExecute = Button(frame,text="Query Test", \
+        self.queryExecute = Button(self,text="Query Test", \
             command=lambda:dbtest('<Button-1>',self.query.get(),self.txt))
-        self.queryExecute.grid(column = 0,row = 4,sticky = (N,E,S,W))
+        self.queryExecute.grid(column = 0,row = 4,sticky = "nsew")
 
-        # Quit button that will exit the application
-        self.exit = Button(frame,text = "Quit",command = frame.quit)
-        self.exit.grid(column = 0,row = 5,sticky = (N,E,S,W))
+        # Quit button will exit the application
+        self.exit = Button(self,text = "Quit",command = self.quit)
+        self.exit.grid(column = 0,row = 5,sticky = "nsew")
