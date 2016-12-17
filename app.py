@@ -9,14 +9,13 @@
     Recur application prototype
 """
 from tkinter import *
-from modules.application.MainFrame import MainFrame
+from modules.application.ApplicationController import ApplicationController
 from modules.system.SystemData import SystemData
 
-versionNumber = "v0.01"
-
 # Initialize app
-root = Tk()
-mainFrame = MainFrame(root,versionNumber)
+app = ApplicationController()
+app.title("Recur App Prototype")
+# mainFrame = MainFrame(root,versionNumber)
 #root.title("Recur Prototype v0.01")
 #root.resizable(width=False,height=False)
 
@@ -47,6 +46,4 @@ mainFrame = MainFrame(root,versionNumber)
 # #btn.bind('<Button-1>',lambda:dbtest('<Button-1>',query.get()))
 # btn.grid(column=1,row=4,columnspan=2,rowspan=1,sticky=(S))
 
-
-
-root.mainloop()
+app.mainloop()
