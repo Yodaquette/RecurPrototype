@@ -47,6 +47,9 @@ def login(event,controller,username,password):
     finally:
         db.close()
 
+def register(event,username,password,firstName,lastName,email,phone):
+    """Registers a new user"""
+
 def dbtest(event,q,t):
     """Test that the database connection works"""
     db = dbconnect()
