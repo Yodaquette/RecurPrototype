@@ -5,7 +5,9 @@
     The screen where registered users will log in
 """
 import tkinter as tk
+from tkinter import ttk
 from modules.database.DbInteract import login
+from modules.application.Registration import Registration
 
 
 class LoginFrame(tk.Frame):
@@ -33,11 +35,11 @@ class LoginFrame(tk.Frame):
         entryPassword.grid(column = 1,row = 2,sticky = "W")
 
         # Login button
-        btnLogin = tk.Button(self,text = "Login", \
+        btnLogin = ttk.Button(self,text = "Login", \
             command = lambda:login('<Button-1>',parent,username.get(),password.get()))
         btnLogin.grid(column = 0,row = 3,sticky = "sew")
 
         # Register button
-        btnRegister = tk.Button(self,text = "Register", \
-            command = lambda:register('<Button-1>',username.get(),password.get()))
+        btnRegister = ttk.Button(self,text = "Register", \
+            command = lambda:parent.display(Registration))
         btnRegister.grid(column = 1,row = 3,sticky = "sew")
